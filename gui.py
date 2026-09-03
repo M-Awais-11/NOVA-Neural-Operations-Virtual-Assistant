@@ -23,7 +23,7 @@ class AnimatedTerminalGUI:
 
     def __init__(self, root: tk.Tk):
         self.root = root
-        self.root.title("Command Prompt - AI Desktop Agent")
+        self.root.title("Command Prompt - NOVA-Neural-Operations-Virtual-Assistant ")
         self.root.geometry("920x620")
         self.root.minsize(700, 450)
         self.root.configure(bg="#0C0C0C")
@@ -76,7 +76,7 @@ class AnimatedTerminalGUI:
 
         title_lbl = tk.Label(
             self.header_frame,
-            text=" 🖥️  Command Prompt - [AI Desktop Agent Core]",
+            text=" 🖥️  Command Prompt - NOVA-Neural-Operations-Virtual-Assistant ",
             bg="#1E1E1E",
             fg="#CCCCCC",
             font=("Segoe UI", 9),
@@ -245,7 +245,7 @@ class AnimatedTerminalGUI:
     def _show_help(self):
         help_text = """
 ======================================================================
-                  AI DESKTOP AGENT - HELP & EXAMPLES
+    NOVA-Neural-Operations-Virtual-Assistant  - HELP & EXAMPLES
 ======================================================================
 Commands you can run:
 • Create Folder: Create a folder named MyProjects on my Desktop
