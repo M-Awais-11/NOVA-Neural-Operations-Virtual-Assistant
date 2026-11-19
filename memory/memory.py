@@ -45,6 +45,7 @@ class AgentMemory:
         """Redacts potential API keys and passwords from persisted memory."""
         if not text:
             return text
+            
         # Redact common key patterns (e.g. sk-..., bearer tokens)
         text = re.sub(r'sk-[a-zA-Z0-9_-]{20,}', '[REDACTED_API_KEY]', text)
         text = re.sub(r'(password|passwd|secret|api_key|token)\s*[:=]\s*["\']?[^"\'\s]+["\']?', r'\1: [REDACTED]', text, flags=re.IGNORECASE)
