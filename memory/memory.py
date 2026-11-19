@@ -13,6 +13,7 @@ class AgentMemory:
 
     def __init__(self, db_path: Optional[Path] = None):
         self.db_path = db_path or settings.db_path
+        
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self._init_db()
 
