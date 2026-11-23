@@ -1,4 +1,4 @@
-"""File and folder manipulation tools with strict security validation."""
+
 import os
 import datetime
 from pathlib import Path
