@@ -46,6 +46,7 @@ class CreateFolderTool(BaseTool):
     risk_level = RiskLevel.MODERATE
 
     def execute(self, path: str) -> ToolResult:
+        
         try:
             target_path = path_validator.validate(path, must_exist=False)
             if target_path.exists() and not target_path.is_dir():
