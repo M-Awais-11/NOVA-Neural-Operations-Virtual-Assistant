@@ -33,6 +33,7 @@ class BaseTool(ABC):
 
         return {
             "type": "function",
+            
             "function": {
                 "name": self.name,
                 "description": self.description,
