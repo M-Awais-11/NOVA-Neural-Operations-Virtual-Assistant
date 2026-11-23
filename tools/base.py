@@ -9,6 +9,7 @@ class ToolResult(BaseModel):
     """Encapsulates the standard output of a tool execution."""
     success: bool
     data: Optional[Any] = None
+    
     message: str = ""
     error: Optional[str] = None
 
